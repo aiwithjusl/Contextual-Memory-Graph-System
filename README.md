@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/contextual-memory-banner.svg" alt="Contextual Memory Graph System" width="800"/>
+</div>
+
 # Contextual Memory Graph System
 
 > **Advanced AI Knowledge Graph with Contextual Memory for Mobile Devices**
