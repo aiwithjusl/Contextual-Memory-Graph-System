@@ -239,7 +239,7 @@ MIT License - see LICENSE file for details
 **Project Developer**: Justin Lane
 - Email: aiwithjusl.dev@gmail.com
 - LinkedIn: Justin Lane (https://www.linkedin.com/in/justin-lane-69b960219)
-- GitHub: @aiwithjusl
+- GitHub: aiwithjusl (https://github.com/aiwithjusl/aiwithjusl)
 
 ---
 
