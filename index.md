@@ -137,11 +137,6 @@
 
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Mobile](https://img.shields.io/badge/Mobile-Optimized-brightgreen.svg)](https://github.com/yourusername/contextual-memory-graph-system)
-[![AI](https://img.shields.io/badge/AI-Knowledge%20Graph-purple.svg)](https://github.com/yourusername/contextual-memory-graph-system)
-
 </div>
 
 ---
