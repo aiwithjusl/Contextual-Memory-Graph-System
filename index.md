@@ -137,249 +137,105 @@
 
 <div align="center">
 
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Mobile](https://img.shields.io/badge/Mobile-Optimized-brightgreen.svg)](https://github.com/aiwithjusl/contextual-memory-graph-system)
+[![AI](https://img.shields.io/badge/AI-Knowledge%20Graph-purple.svg)](https://github.com/aiwithjusl/contextual-memory-graph-system)
+
+**🧠 Advanced AI Knowledge Graph with Contextual Memory**
+
+*Mobile-optimized system that builds dynamic relationships from conversations and documents*
+
 </div>
 
 ---
 
-> **Advanced AI Knowledge Graph with Contextual Memory for Mobile Devices**
+## 🚀 What It Does
 
-A sophisticated, mobile-optimized knowledge graph system that builds dynamic contextual relationships from conversations, documents, and interactions. Unlike traditional RAG systems, this creates persistent, interconnected memories that improve understanding over time.
+- **🔗 Builds Knowledge Graphs** - Automatically extracts entities and relationships from text
+- **🧠 Contextual Memory** - Preserves meaning across interactions, not just keywords  
+- **📱 Mobile-First** - Optimized for Android devices with efficient SQLite storage
+- **🔒 Privacy-Preserving** - All processing happens locally on your device
 
-## 🚀 Features
+## ⚡ Quick Start
 
-### Core Capabilities
-- **🧠 Dynamic Knowledge Graph**: Automatically builds relationships between entities, concepts, and memories
-- **🔗 Contextual Memory**: Preserves context and meaning across interactions, not just keyword matching  
-- **📱 Mobile-First Architecture**: Optimized for Android devices with efficient SQLite storage
-- **🔒 Privacy-Preserving**: All processing happens locally on device
-- **⚡ Real-time Processing**: Sub-second response times for typical queries
-- **🎯 Semantic Search**: Context-aware retrieval beyond simple keyword matching
-
-### Technical Highlights
-- **🧬 Graph Neural Network Concepts**: Implements importance scoring and relationship weighting
-- **📈 Incremental Learning**: Memory importance evolves based on access patterns and connections
-- **🔍 Advanced NLP Pipeline**: Entity extraction, relationship detection, and semantic similarity
-- **⚙️ Modular Architecture**: Clean separation of concerns for easy extension and modification
-- **💾 Efficient Storage**: WAL mode SQLite with optimized indexing for mobile performance
-
-## 🏗️ Architecture
-
-<div align="center">
-
-```mermaid
-graph TB
-    A[ContextualMemorySystem] --> B[NLP Processor]
-    A --> C[Context Weaver]
-    A --> D[Memory Retriever]
-    A --> E[Mobile Graph Storage]
-    
-    B --> F[Entity Extraction]
-    B --> G[Relationship Detection]
-    B --> H[Semantic Similarity]
-    
-    C --> I[Memory Creation]
-    C --> J[Importance Scoring]
-    C --> K[Context Linking]
-    
-    D --> L[Query Processing]
-    D --> M[Relevance Scoring]
-    D --> N[Result Ranking]
-    
-    E --> O[SQLite Backend]
-    E --> P[Graph Relations]
-    E --> Q[Mobile Optimization]
-    
-    style A fill:#00d4ff,stroke:#fff,stroke-width:2px,color:#000
-    style E fill:#b83dba,stroke:#fff,stroke-width:2px,color:#fff
-```
-
-</div>
-
-## 📱 Requirements
-
-### Software Dependencies
 ```bash
-Python 3.7+
-SQLite3 (included with Python)
-Standard library only (no external dependencies)
-```
-
-### Mobile Environment
-- **✅ Tested on**: Samsung Galaxy S24 with Pydroid 3
-- **💾 Storage**: ~100KB for core system + variable data storage
-- **🧠 Memory**: Efficient memory usage with streaming processing
-- **⚡ Performance**: Sub-second response times for typical queries
-
-## 🛠️ Installation
-
-### Option 1: Quick Start
-```bash
-# Download and run directly
-wget https://raw.githubusercontent.com/yourusername/contextual-memory-graph-system/main/contextual_memory_mvp.py
+# Download and run
 python contextual_memory_mvp.py
-```
-
-### Option 2: Clone Repository
-```bash
-git clone https://github.com/yourusername/contextual-memory-graph-system.git
-cd contextual-memory-graph-system
-python contextual_memory_mvp.py
-```
-
-### Option 3: Mobile (Pydroid 3)
-1. Install **Pydroid 3** from Google Play Store
-2. Copy the code into a new Python file
-3. Run directly on your Android device
-
-## 🎯 Quick Start
-
-### Basic Usage
-```python
-from contextual_memory_mvp import ContextualMemorySystem
-
-# Initialize the system
-cms = ContextualMemorySystem("my_knowledge.db")
 
 # Add memories
 cms.add_memory("John works at Google and specializes in AI research.")
-cms.add_memory("Python is widely used for machine learning projects.")
 
-# Query the system
+# Query the system  
 results = cms.query_memory("Tell me about AI research")
-for result in results:
-    print(f"[{result['score']:.3f}] {result['content']}")
 ```
 
-### Advanced Features
-```python
-# Add contextual tags
-cms.add_memory("Neural networks require large datasets", ["ml", "data"])
+## 🎯 Key Features
 
-# Explore entity relationships  
-network = cms.explore_entity("John")
-print(f"Connected to: {network['connected_entities']}")
+| Feature | Description |
+|---------|-------------|
+| **Entity Extraction** | Automatically identifies people, organizations, concepts |
+| **Relationship Detection** | Discovers connections like "works at", "created", "uses" |
+| **Semantic Search** | Context-aware retrieval beyond keyword matching |
+| **Importance Scoring** | Memory relevance evolves based on access patterns |
 
-# Get system statistics
-stats = cms.get_system_stats()
-print(f"Entities: {stats['entities']}, Relationships: {stats['relationships']}")
+## 🏗️ Architecture
+
+```
+ContextualMemorySystem
+├── NLP Processor (Entity extraction, relationships)
+├── Context Weaver (Memory creation, linking)  
+├── Memory Retriever (Query processing, ranking)
+└── Mobile Storage (SQLite backend, graph relations)
 ```
 
-## 📊 Demo Output
+## 📊 Demo Results
 
-```bash
-=== Contextual Memory Graph System MVP Demo ===
-
-Adding sample memories...
-✓ Memory stored with ID: fd4f261fee03
-✓ Memory stored with ID: 1448b5f2d586
-✓ Memory stored with ID: ecc70e0104a4
-
+```
 System Stats: {'entities': 48, 'relationships': 15, 'memories': 5}
 
-=== Extracted Entities ===
-PERSON: John
-ORGANIZATION: Google  
-TECH: Python, TensorFlow
-CONCEPT: research, algorithm
-
-=== Extracted Relationships ===
-John --[WORKS_AT]--> Google
-He --[CREATED]--> new machine learning algorithm
-AI research --[LOCATED_IN]--> Mountain View
-
 Query: 'Tell me about John'
-  1. [Score: 0.348] The AI algorithm that John developed uses Python...
-  2. [Score: 0.348] John works at Google and specializes in AI research...
+  1. [Score: 0.348] John works at Google and specializes in AI research...
+  2. [Score: 0.348] The AI algorithm that John developed uses Python...
 
 ✓ Database created: demo_knowledge.db (77,824 bytes)
 ```
 
-## 🧪 Testing
+## 🎯 Use Cases
 
-Run the comprehensive test suite:
-```bash
-python contextual_memory_mvp.py
-```
-
-**Test Coverage:**
-- ✅ Entity extraction validation
-- ✅ Relationship detection testing  
-- ✅ Query relevance scoring
-- ✅ Memory importance calculation
-- ✅ Database integrity checks
-- ✅ Mobile performance benchmarks
-
-## 🚀 Use Cases
-
-<div align="center">
-
-| Use Case | Description | Benefits |
-|----------|-------------|----------|
-| 🤖 **Personal AI Assistant** | Build personalized knowledge from conversations | Context-aware responses, learning user preferences |
-| 🏢 **Enterprise Knowledge Management** | Extract insights from company documents | Organizational knowledge graphs, contextual search |
-| 🔬 **Research & Development** | Track research connections and dependencies | Knowledge mapping, gap identification |
-| 📚 **Education & Learning** | Create personalized learning paths | Concept mapping, progress tracking |
-
-</div>
+- **Personal AI Assistant** - Build personalized knowledge from conversations
+- **Enterprise Knowledge Management** - Extract insights from company documents  
+- **Research & Development** - Track connections and dependencies
+- **Education & Learning** - Create personalized learning paths
 
 ## 🛡️ Privacy & Security
 
-- **🔒 Local Processing**: All data stays on device
-- **🚫 No External APIs**: No data transmitted to external services
-- **🔐 Encrypted Storage**: SQLite database with optional encryption
-- **👻 Minimal Footprint**: Lightweight system with small attack surface
+- 🔒 **Local Processing** - All data stays on device
+- 🚫 **No External APIs** - No data transmitted to external services
+- 🔐 **Encrypted Storage** - SQLite database with optional encryption
 
-## 🔄 Roadmap
+## 📱 Requirements
 
-### 🎯 Portfolio Version Enhancements
-- **🤖 Advanced NLP**: Transformer-based entity extraction and embedding
-- **🧠 Graph Neural Networks**: Sophisticated relationship learning and inference
-- **🎭 Multi-modal Support**: Image, audio, and video content integration
-- **🔄 Real-time Sync**: Multi-device synchronization with conflict resolution
-- **🏢 Enterprise Features**: Role-based access, audit trails, compliance reporting
+- Python 3.7+
+- Standard library only (no external dependencies)
+- Tested on Samsung Galaxy S24 with Pydroid 3
 
-### 🔌 Potential Integrations
-- **📊 Vector Databases**: Hybrid graph + vector storage for semantic search
-- **🌐 Knowledge Base APIs**: Integration with external knowledge sources
-- **🤖 ML Pipelines**: Automated insight extraction and prediction
-- **📈 Visualization Tools**: Interactive graph exploration and analysis
+## 📁 Files
 
-## 🏆 Technical Achievements
-
-<div align="center">
-
-| Achievement | Description |
-|-------------|-------------|
-| **🗄️ Graph Database Design** | Custom SQLite schema with relationship modeling |
-| **🔤 Natural Language Processing** | Entity extraction and semantic analysis |
-| **📱 Mobile Optimization** | Resource-efficient algorithms for mobile deployment |
-| **🏗️ System Architecture** | Modular, scalable design for enterprise applications |
-| **🧠 AI/ML Engineering** | Contextual learning and importance scoring algorithms |
-
-</div>
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details
-
-## 👥 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- `contextual_memory_mvp.py` - Main system implementation
+- `README.md` - Complete technical documentation
+- `LICENSE` - MIT License
 
 ## 📞 Contact
 
 <div align="center">
 
-## 📞 Contact
+**Justin Lane** | *AI/ML Developer*
 
-**Project Developer**: Justin Lane 
-- Email: aiwithjusl.dev@gmail.com
-- LinkedIn: Justin Lane (https://www.linkedin.com/in/justin-lane-69b960219)
-- GitHub: aiwithjusl (https://github.com/aiwithjusl/aiwithjusl)
+[![Email](https://img.shields.io/badge/Email-aiwithjusl.dev%40gmail.com-red?style=flat&logo=gmail)](mailto:aiwithjusl.dev@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Justin%20Lane-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/justin-lane-69b960219)
+[![GitHub](https://img.shields.io/badge/GitHub-aiwithjusl-black?style=flat&logo=github)](https://github.com/aiwithjusl)
+
 </div>
 
 ---
