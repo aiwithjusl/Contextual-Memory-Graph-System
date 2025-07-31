@@ -225,10 +225,6 @@ Query: 'Tell me about John'
 
 <div align="center">
 
-**Justin Lane** | *AI/ML Developer*
-
-## 📞 Contact
-
 **Project Developer**: Justin Lane
 - Email: aiwithjusl.dev@gmail.com
 - LinkedIn: Justin Lane (https://www.linkedin.com/in/justin-lane-69b960219)
