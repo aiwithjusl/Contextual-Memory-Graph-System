@@ -137,11 +137,6 @@
 
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Mobile](https://img.shields.io/badge/Mobile-Optimized-brightgreen.svg)](https://github.com/aiwithjusl/contextual-memory-graph-system)
-[![AI](https://img.shields.io/badge/AI-Knowledge%20Graph-purple.svg)](https://github.com/aiwithjusl/contextual-memory-graph-system)
-
 **🧠 Advanced AI Knowledge Graph with Contextual Memory**
 
 *Mobile-optimized system that builds dynamic relationships from conversations and documents*
@@ -232,10 +227,12 @@ Query: 'Tell me about John'
 
 **Justin Lane** | *AI/ML Developer*
 
-[![Email](https://img.shields.io/badge/Email-aiwithjusl.dev%40gmail.com-red?style=flat&logo=gmail)](mailto:aiwithjusl.dev@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Justin%20Lane-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/justin-lane-69b960219)
-[![GitHub](https://img.shields.io/badge/GitHub-aiwithjusl-black?style=flat&logo=github)](https://github.com/aiwithjusl)
+## 📞 Contact
 
+**Project Developer**: Justin Lane
+- Email: aiwithjusl.dev@gmail.com
+- LinkedIn: Justin Lane (https://www.linkedin.com/in/justin-lane-69b960219)
+- GitHub: aiwithjusl (https://github.com/aiwithjusl/aiwithjusl)
 </div>
 
 ---
