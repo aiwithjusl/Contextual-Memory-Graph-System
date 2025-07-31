@@ -221,15 +221,12 @@ Query: 'Tell me about John'
 - `README.md` - Complete technical documentation
 - `LICENSE` - MIT License
 
-## 📞 Contact
+## 👤 About the Author
 
-<div align="center">
-
-**Project Developer**: Justin Lane
-- Email: aiwithjusl.dev@gmail.com
-- LinkedIn: Justin Lane (https://www.linkedin.com/in/justin-lane-69b960219)
-- GitHub: aiwithjusl (https://github.com/aiwithjusl/aiwithjusl)
-</div>
+**Justin Lane**  
+🔗 GitHub: [@aiwithjusl](https://github.com/aiwithjusl)  
+🔗 LinkedIn: [Justin Lane](https://www.linkedin.com/in/justin-lane-69b960219)  
+📬 Email: aiwithjusl.dev@gmail.com
 
 ---
 
