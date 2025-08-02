@@ -6,7 +6,6 @@
 
 🧠 Advanced AI Knowledge Graph with Contextual Memory
 
----
 
 Mobile-optimized system that builds dynamic relationships from conversations and documents
 
