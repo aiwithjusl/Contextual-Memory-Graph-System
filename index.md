@@ -94,7 +94,7 @@ Query: 'Tell me about John'
 
 <div align="center">
 
-**Justin Lane** | *AI/ML Developer*
+**Justin Lane**
 
 🔗 GitHub: [@aiwithjusl](https://github.com/aiwithjusl)  
 🔗 LinkedIn: [Justin Lane](https://www.linkedin.com/in/justin-lane-69b960219)  
