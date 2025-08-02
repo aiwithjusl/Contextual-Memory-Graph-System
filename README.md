@@ -1,6 +1,6 @@
-<div align="center">
-  <img src="assets/contextual-memory-banner.svg" alt="Contextual Memory Graph System" width="800"/>
-</div>
+<p align="center">
+  <img src="images/file_0000000084c061f8b0bb3ac20bbd9b7d (1).png" alt="Contextual Memory Graph System Banner" width="100%" />
+</p>
 
 # Contextual Memory Graph System
 
