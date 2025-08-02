@@ -4,9 +4,11 @@
 
 <div align="center">
 
-**🧠 Advanced AI Knowledge Graph with Contextual Memory**
+🧠 Advanced AI Knowledge Graph with Contextual Memory
 
-*Mobile-optimized system that builds dynamic relationships from conversations and documents*
+
+Mobile-optimized system that builds dynamic relationships from conversations and documents
+
 
 </div>
 
