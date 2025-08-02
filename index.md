@@ -7,9 +7,7 @@
 </div>
 
 ## **🧠 Advanced AI Knowledge Graph with Contextual Memory**
-
 <br>
-
 ### *Mobile-optimized system that builds dynamic relationships from conversations and documents*
 
 ---
