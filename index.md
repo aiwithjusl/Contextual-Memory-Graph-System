@@ -1,138 +1,140 @@
 <div align="center">
-  <svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background Gradient -->
-    <defs>
-      <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#0a1428;stop-opacity:1" />
-        <stop offset="50%" style="stop-color:#1a2040;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#2d1b69;stop-opacity:1" />
-      </linearGradient>
-      
-      <!-- Glow effects -->
-      <filter id="glow">
-        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-        <feMerge> 
-          <feMergeNode in="coloredBlur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-      
-      <filter id="softGlow">
-        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-        <feMerge> 
-          <feMergeNode in="coloredBlur"/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-      </filter>
-    </defs>
+  
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1428;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a2040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d1b69;stop-opacity:1" />
+    </linearGradient>
     
-    <!-- Background -->
-    <rect width="800" height="400" fill="url(#bgGradient)"/>
+    <!-- Glow effects -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
     
-    <!-- Left Side - Circuit Brain -->
-    <g transform="translate(80,100)">
-      <!-- Brain outline -->
-      <path d="M20,60 Q20,20 60,20 Q100,20 120,40 Q140,20 180,20 Q220,20 220,60 Q220,80 200,100 Q220,120 220,160 Q220,200 180,200 Q140,200 120,180 Q100,200 60,200 Q20,200 20,160 Q20,120 40,100 Q20,80 20,60 Z" 
-            fill="none" 
-            stroke="#00d4ff" 
-            stroke-width="3" 
-            filter="url(#glow)"/>
-      
-      <!-- Circuit patterns inside brain -->
-      <!-- Horizontal lines -->
-      <line x1="40" y1="80" x2="100" y2="80" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="120" y1="80" x2="180" y2="80" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="60" y1="120" x2="120" y2="120" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="140" y1="120" x2="200" y2="120" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="40" y1="160" x2="100" y2="160" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="120" y1="160" x2="180" y2="160" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      
-      <!-- Vertical lines -->
-      <line x1="80" y1="50" x2="80" y2="90" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="160" y1="50" x2="160" y2="90" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="100" y1="100" x2="100" y2="140" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="140" y1="100" x2="140" y2="140" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="80" y1="140" x2="80" y2="180" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      <line x1="160" y1="140" x2="160" y2="180" stroke="#00d4ff" stroke-width="2" opacity="0.8"/>
-      
-      <!-- Circuit nodes -->
-      <circle cx="80" cy="80" r="4" fill="#00d4ff" filter="url(#softGlow)"/>
-      <circle cx="160" cy="80" r="4" fill="#00d4ff" filter="url(#softGlow)"/>
-      <circle cx="100" cy="120" r="4" fill="#00d4ff" filter="url(#softGlow)"/>
-      <circle cx="140" cy="120" r="4" fill="#00d4ff" filter="url(#softGlow)"/>
-      <circle cx="80" cy="160" r="4" fill="#00d4ff" filter="url(#softGlow)"/>
-      <circle cx="160" cy="160" r="4" fill="#00d4ff" filter="url(#softGlow)"/>
-      
-      <!-- Additional circuit elements -->
-      <circle cx="60" cy="100" r="3" fill="#00d4ff" opacity="0.7"/>
-      <circle cx="180" cy="100" r="3" fill="#00d4ff" opacity="0.7"/>
-      <circle cx="120" cy="60" r="3" fill="#00d4ff" opacity="0.7"/>
-      <circle cx="120" cy="180" r="3" fill="#00d4ff" opacity="0.7"/>
-    </g>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Left Side - Circuit Brain (scaled down) -->
+  <g transform="translate(50,75)">
+    <!-- Brain outline -->
+    <path d="M15,45 Q15,15 45,15 Q75,15 90,30 Q105,15 135,15 Q165,15 165,45 Q165,60 150,75 Q165,90 165,120 Q165,150 135,150 Q105,150 90,135 Q75,150 45,150 Q15,150 15,120 Q15,90 30,75 Q15,60 15,45 Z" 
+          fill="none" 
+          stroke="#00d4ff" 
+          stroke-width="2" 
+          filter="url(#glow)"/>
     
-    <!-- Center Text -->
-    <g transform="translate(400,200)">
-      <text x="0" y="-20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="300">Contextual Memory</text>
-      <text x="0" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="300">Graph System</text>
-    </g>
+    <!-- Circuit patterns inside brain -->
+    <!-- Horizontal lines -->
+    <line x1="30" y1="60" x2="75" y2="60" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="90" y1="60" x2="135" y2="60" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="45" y1="90" x2="90" y2="90" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="105" y1="90" x2="150" y2="90" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="30" y1="120" x2="75" y2="120" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="90" y1="120" x2="135" y2="120" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
     
-    <!-- Right Side - Knowledge Graph Network -->
-    <g transform="translate(580,100)">
-      <!-- Large central node -->
-      <circle cx="60" cy="60" r="12" fill="none" stroke="#b83dba" stroke-width="3" filter="url(#glow)"/>
-      
-      <!-- Medium nodes -->
-      <circle cx="20" cy="40" r="8" fill="none" stroke="#b83dba" stroke-width="2" opacity="0.8"/>
-      <circle cx="100" cy="30" r="8" fill="none" stroke="#b83dba" stroke-width="2" opacity="0.8"/>
-      <circle cx="120" cy="80" r="8" fill="none" stroke="#b83dba" stroke-width="2" opacity="0.8"/>
-      <circle cx="90" cy="120" r="8" fill="none" stroke="#b83dba" stroke-width="2" opacity="0.8"/>
-      <circle cx="30" cy="100" r="8" fill="none" stroke="#b83dba" stroke-width="2" opacity="0.8"/>
-      
-      <!-- Small nodes -->
-      <circle cx="40" cy="20" r="5" fill="none" stroke="#d946ef" stroke-width="2" opacity="0.6"/>
-      <circle cx="140" cy="50" r="5" fill="none" stroke="#d946ef" stroke-width="2" opacity="0.6"/>
-      <circle cx="130" cy="110" r="5" fill="none" stroke="#d946ef" stroke-width="2" opacity="0.6"/>
-      <circle cx="60" cy="140" r="5" fill="none" stroke="#d946ef" stroke-width="2" opacity="0.6"/>
-      <circle cx="10" cy="80" r="5" fill="none" stroke="#d946ef" stroke-width="2" opacity="0.6"/>
-      <circle cx="80" cy="10" r="5" fill="none" stroke="#d946ef" stroke-width="2" opacity="0.6"/>
-      
-      <!-- Connection lines -->
-      <line x1="60" y1="60" x2="20" y2="40" stroke="#b83dba" stroke-width="2" opacity="0.6"/>
-      <line x1="60" y1="60" x2="100" y2="30" stroke="#b83dba" stroke-width="2" opacity="0.6"/>
-      <line x1="60" y1="60" x2="120" y2="80" stroke="#b83dba" stroke-width="2" opacity="0.6"/>
-      <line x1="60" y1="60" x2="90" y2="120" stroke="#b83dba" stroke-width="2" opacity="0.6"/>
-      <line x1="60" y1="60" x2="30" y2="100" stroke="#b83dba" stroke-width="2" opacity="0.6"/>
-      
-      <!-- Secondary connections -->
-      <line x1="20" y1="40" x2="40" y2="20" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
-      <line x1="100" y1="30" x2="140" y2="50" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
-      <line x1="120" y1="80" x2="130" y2="110" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
-      <line x1="90" y1="120" x2="60" y2="140" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
-      <line x1="30" y1="100" x2="10" y2="80" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
-      <line x1="100" y1="30" x2="80" y2="10" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
-      
-      <!-- Inter-node connections -->
-      <line x1="20" y1="40" x2="30" y2="100" stroke="#d946ef" stroke-width="1" opacity="0.3"/>
-      <line x1="100" y1="30" x2="120" y2="80" stroke="#d946ef" stroke-width="1" opacity="0.3"/>
-      <line x1="120" y1="80" x2="90" y2="120" stroke="#d946ef" stroke-width="1" opacity="0.3"/>
-      
-      <!-- Memory nodes (smaller, different color) -->
-      <circle cx="160" cy="40" r="4" fill="#ec4899" opacity="0.8"/>
-      <circle cx="150" cy="90" r="4" fill="#ec4899" opacity="0.8"/>
-      <circle cx="110" cy="140" r="4" fill="#ec4899" opacity="0.8"/>
-      <circle cx="40" cy="130" r="4" fill="#ec4899" opacity="0.8"/>
-      <circle cx="0" cy="60" r="4" fill="#ec4899" opacity="0.8"/>
-    </g>
+    <!-- Vertical lines -->
+    <line x1="60" y1="37" x2="60" y2="67" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="120" y1="37" x2="120" y2="67" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="75" y1="75" x2="75" y2="105" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="105" y1="75" x2="105" y2="105" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="60" y1="105" x2="60" y2="135" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="120" y1="105" x2="120" y2="135" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
     
-    <!-- Decorative elements -->
-    <!-- Top subtle grid -->
-    <g opacity="0.1">
-      <line x1="0" y1="50" x2="800" y2="50" stroke="#ffffff" stroke-width="1"/>
-      <line x1="0" y1="100" x2="800" y2="100" stroke="#ffffff" stroke-width="1"/>
-      <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff" stroke-width="1"/>
-      <line x1="0" y1="350" x2="800" y2="350" stroke="#ffffff" stroke-width="1"/>
-    </g>
-  </svg>
+    <!-- Circuit nodes -->
+    <circle cx="60" cy="60" r="3" fill="#00d4ff" filter="url(#softGlow)"/>
+    <circle cx="120" cy="60" r="3" fill="#00d4ff" filter="url(#softGlow)"/>
+    <circle cx="75" cy="90" r="3" fill="#00d4ff" filter="url(#softGlow)"/>
+    <circle cx="105" cy="90" r="3" fill="#00d4ff" filter="url(#softGlow)"/>
+    <circle cx="60" cy="120" r="3" fill="#00d4ff" filter="url(#softGlow)"/>
+    <circle cx="120" cy="120" r="3" fill="#00d4ff" filter="url(#softGlow)"/>
+    
+    <!-- Additional circuit elements -->
+    <circle cx="45" cy="75" r="2" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="135" cy="75" r="2" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="90" cy="45" r="2" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="90" cy="135" r="2" fill="#00d4ff" opacity="0.7"/>
+  </g>
+  
+  <!-- Center Text -->
+  <g transform="translate(300,150)">
+    <text x="0" y="-15" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="300">Contextual Memory</text>
+    <text x="0" y="20" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="300">Graph System</text>
+  </g>
+  
+  <!-- Right Side - Knowledge Graph Network (scaled down) -->
+  <g transform="translate(435,75)">
+    <!-- Large central node -->
+    <circle cx="45" cy="45" r="9" fill="none" stroke="#b83dba" stroke-width="2" filter="url(#glow)"/>
+    
+    <!-- Medium nodes -->
+    <circle cx="15" cy="30" r="6" fill="none" stroke="#b83dba" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="75" cy="22" r="6" fill="none" stroke="#b83dba" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="90" cy="60" r="6" fill="none" stroke="#b83dba" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="67" cy="90" r="6" fill="none" stroke="#b83dba" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="22" cy="75" r="6" fill="none" stroke="#b83dba" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Small nodes -->
+    <circle cx="30" cy="15" r="4" fill="none" stroke="#d946ef" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="105" cy="37" r="4" fill="none" stroke="#d946ef" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="97" cy="82" r="4" fill="none" stroke="#d946ef" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="45" cy="105" r="4" fill="none" stroke="#d946ef" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="7" cy="60" r="4" fill="none" stroke="#d946ef" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="60" cy="7" r="4" fill="none" stroke="#d946ef" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Connection lines -->
+    <line x1="45" y1="45" x2="15" y2="30" stroke="#b83dba" stroke-width="1.5" opacity="0.6"/>
+    <line x1="45" y1="45" x2="75" y2="22" stroke="#b83dba" stroke-width="1.5" opacity="0.6"/>
+    <line x1="45" y1="45" x2="90" y2="60" stroke="#b83dba" stroke-width="1.5" opacity="0.6"/>
+    <line x1="45" y1="45" x2="67" y2="90" stroke="#b83dba" stroke-width="1.5" opacity="0.6"/>
+    <line x1="45" y1="45" x2="22" y2="75" stroke="#b83dba" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Secondary connections -->
+    <line x1="15" y1="30" x2="30" y2="15" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
+    <line x1="75" y1="22" x2="105" y2="37" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
+    <line x1="90" y1="60" x2="97" y2="82" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
+    <line x1="67" y1="90" x2="45" y2="105" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
+    <line x1="22" y1="75" x2="7" y2="60" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
+    <line x1="75" y1="22" x2="60" y2="7" stroke="#d946ef" stroke-width="1" opacity="0.4"/>
+    
+    <!-- Inter-node connections -->
+    <line x1="15" y1="30" x2="22" y2="75" stroke="#d946ef" stroke-width="1" opacity="0.3"/>
+    <line x1="75" y1="22" x2="90" y2="60" stroke="#d946ef" stroke-width="1" opacity="0.3"/>
+    <line x1="90" y1="60" x2="67" y2="90" stroke="#d946ef" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Memory nodes (smaller, different color) -->
+    <circle cx="120" cy="30" r="3" fill="#ec4899" opacity="0.8"/>
+    <circle cx="112" cy="67" r="3" fill="#ec4899" opacity="0.8"/>
+    <circle cx="82" cy="105" r="3" fill="#ec4899" opacity="0.8"/>
+    <circle cx="30" cy="97" r="3" fill="#ec4899" opacity="0.8"/>
+    <circle cx="0" cy="45" r="3" fill="#ec4899" opacity="0.8"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <!-- Top subtle grid -->
+  <g opacity="0.05">
+    <line x1="0" y1="37" x2="600" y2="37" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="75" x2="600" y2="75" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="225" x2="600" y2="225" stroke="#ffffff" stroke-width="1"/>
+    <line x1="0" y1="262" x2="600" y2="262" stroke="#ffffff" stroke-width="1"/>
+  </g>
+</svg>            
+  
 </div>
 
 <div align="center">
