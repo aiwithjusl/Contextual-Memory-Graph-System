@@ -2,8 +2,6 @@
   <img src="images/file_0000000084c061f8b0bb3ac20bbd9b7d (1).png" alt="Contextual Memory Graph System Banner" width="100%" />
 </p>
 
-# Contextual Memory Graph System
-
 > **Advanced AI Knowledge Graph with Contextual Memory for Mobile Devices**
 
 A sophisticated, mobile-optimized knowledge graph system that builds dynamic contextual relationships from conversations, documents, and interactions. Unlike traditional RAG systems, this creates persistent, interconnected memories that improve understanding over time.
