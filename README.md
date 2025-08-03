@@ -236,12 +236,11 @@ MIT License - see LICENSE file for details
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📞 Contact
-
-**Project Developer**: Justin Lane
-- Email: aiwithjusl.dev@gmail.com
-- LinkedIn: Justin Lane (https://www.linkedin.com/in/justin-lane-69b960219)
-- GitHub: aiwithjusl (https://github.com/aiwithjusl/aiwithjusl)
+<h2>👤 About the Author</h2>
+  <p><strong>Justin Lane</strong><br/>
+  🔗 GitHub: <a href="https://github.com/aiwithjusl" target="_blank">@aiwithjusl</a><br/>
+  🔗 LinkedIn: <a href="https://www.linkedin.com/in/justin-lane-69b960219" target="_blank">Justin Lane</a><br/>
+  📬 Email: <a href="mailto:aiwithjusl.dev@gmail.com">aiwithjusl.dev@gmail.com</a></p>
 
 ---
 
