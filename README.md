@@ -242,6 +242,7 @@ MIT License - see LICENSE file for details
   <p><strong>Justin Lane</strong><br/>
   🔗 GitHub: <a href="https://github.com/aiwithjusl" target="_blank">@aiwithjusl</a><br/>
   🔗 LinkedIn: <a href="https://www.linkedin.com/in/justin-lane-69b960219" target="_blank">Justin Lane</a><br/>
+  📬 Email: <a href="mailto:aiwithjusl.dev@gmail.com">aiwithjusl.dev@gmail.com</a></p>
 
 ---
 
